@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animal Fun Facts Chatbot 🐾</title>
+    <title>Animal Fun Facts Chatbot</title>
     <style>
         * {
             margin: 0;
@@ -202,22 +202,22 @@
     
     <div class="container">
         <div class="header">
-            <h1>🐾 Animal Fun Facts Chatbot 🐾</h1>
+            <h1>Animal Fun Facts Chatbot</h1>
             <p>Ask me about any animal or request a joke!</p>
         </div>
 
         <div class="chat-container" id="chatContainer">
             <div class="message bot">
-                <div class="avatar">🤖</div>
-                <div class="message-content">Hey there! 👋 I'm your Animal Fun Facts buddy! 
+                <div class="avatar">&#129302;</div>
+                <div class="message-content">Hey there! I'm your Animal Fun Facts buddy! 
 
 Ask me about any animal like:
-• "Tell me about elephants"
-• "What's funny about sloths?"
-• "Tell me a joke"
-• "Random fact"
+- "Tell me about elephants"
+- "What's funny about sloths?"
+- "Tell me a joke"
+- "Random fact"
 
-I know 75 hilarious facts and 73 punny jokes! 🎉</div>
+I know 75 hilarious facts and 73 punny jokes!</div>
             </div>
         </div>
 
@@ -229,47 +229,171 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
 
     <script>
         const funFacts = [
-            {animal: "Elephant", fact: "Elephants can hear through their feet by sensing vibrations.", image: "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1200"},
-            {animal: "Sloth", fact: "Sloths only poop once a week and lose a third of their body weight.", image: "https://images.unsplash.com/photo-1621771622108-048e85d0a08f?w=1200"},
-            {animal: "Dolphin", fact: "Dolphins have names for each other and call using whistles.", image: "https://images.unsplash.com/photo-1607153333879-c174d265f1d2?w=1200"},
-            {animal: "Otter", fact: "Otters hold hands while sleeping to avoid drifting apart.", image: "https://images.unsplash.com/photo-1604073049806-1f8b0d89ce1e?w=1200"},
-            {animal: "Giraffe", fact: "Giraffes only need 5–30 minutes of sleep per day.", image: "https://images.unsplash.com/photo-1547721064-da6cfb341d50?w=1200"},
-            {animal: "Flamingo", fact: "A group of flamingos is called a flamboyance.", image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200"},
-            {animal: "Polar Bear", fact: "Polar bears have black skin under their fur to absorb heat.", image: "https://images.unsplash.com/photo-1589656966895-2f33e7653819?w=1200"},
-            {animal: "Kangaroo", fact: "Kangaroos can't walk backward.", image: "https://images.unsplash.com/photo-1549914332-37f072f1295c?w=1200"},
-            {animal: "Koala", fact: "Koalas have unique fingerprints that can confuse forensic scientists.", image: "https://images.unsplash.com/photo-1459262838948-3e2de6c1ec80?w=1200"},
-            {animal: "Cow", fact: "Cows have best friends and get stressed when separated.", image: "https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=1200"},
-            {animal: "Blue Whale", fact: "A blue whale's heart can weigh as much as a car.", image: "https://images.unsplash.com/photo-1567009047565-61e88d38c596?w=1200"},
-            {animal: "Bat", fact: "Bats are the only mammals capable of sustained flight.", image: "https://images.unsplash.com/photo-1594787318286-3d835c1d207f?w=1200"},
-            {animal: "Lion", fact: "Lions' roars can be heard from five miles away.", image: "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1200"},
-            {animal: "Penguin", fact: "Penguins propose by presenting pebbles.", image: "https://images.unsplash.com/photo-1551986782-d0169b3f8fa7?w=1200"},
-            {animal: "Owl", fact: "Owls can rotate their heads 270 degrees.", image: "https://images.unsplash.com/photo-1606567595334-d39972c85dbe?w=1200"},
-            {animal: "Octopus", fact: "Octopuses have three hearts and blue blood.", image: "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=1200"},
-            {animal: "Cat", fact: "Cats meow only to communicate with humans.", image: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1200"},
-            {animal: "Dog", fact: "Dogs have a sense of time.", image: "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200"},
-            {animal: "Tiger", fact: "Tigers have striped skin.", image: "https://images.unsplash.com/photo-1561731216-c3a4d99437d5?w=1200"},
-            {animal: "Panda", fact: "Pandas eat bamboo for 16 hours a day.", image: "https://images.unsplash.com/photo-1525382455947-f319bc05fb35?w=1200"}
+            {animal: "Elephant", fact: "Elephants can hear through their feet by sensing vibrations.", image: "elephant.jpeg"},
+            {animal: "Sloth", fact: "Sloths only poop once a week and lose a third of their body weight.", image: "sloth.jpeg"},
+            {animal: "Dolphin", fact: "Dolphins have names for each other and call using whistles.", image: "dolphin.jpeg"},
+            {animal: "Otter", fact: "Otters hold hands while sleeping to avoid drifting apart.", image: "otter.jpeg"},
+            {animal: "Giraffe", fact: "Giraffes only need 5-30 minutes of sleep per day.", image: "giraffe.jpeg"},
+            {animal: "Flamingo", fact: "A group of flamingos is called a flamboyance.", image: "flamingo.jpeg"},
+            {animal: "Polar Bear", fact: "Polar bears have black skin under their fur to absorb heat.", image: "polar bear.jpeg"},
+            {animal: "Kangaroo", fact: "Kangaroos can't walk backward.", image: "kangaroo.jpeg"},
+            {animal: "Koala", fact: "Koalas have unique fingerprints that can confuse forensic scientists.", image: "koala.jpeg"},
+            {animal: "Cow", fact: "Cows have best friends and get stressed when separated.", image: "cow.jpeg"},
+            {animal: "Blue Whale", fact: "A blue whale's heart can weigh as much as a car.", image: "blue whale.jpeg"},
+            {animal: "Bat", fact: "Bats are the only mammals capable of sustained flight.", image: "bat.jpeg"},
+            {animal: "Armadillo", fact: "Armadillos can catch leprosy and are studied for research.", image: "armadillo.jpeg"},
+            {animal: "Lion", fact: "Lions' roars can be heard from five miles away.", image: "lion.jpeg"},
+            {animal: "Wombat", fact: "Wombats have cube-shaped droppings.", image: "wombat.jpeg"},
+            {animal: "Ostrich", fact: "Ostriches have the largest eyes of any land animal.", image: "ostrich.jpeg"},
+            {animal: "Hummingbird", fact: "Hummingbirds can fly backward.", image: "hummingbird.jpeg"},
+            {animal: "Penguin", fact: "Penguins propose by presenting pebbles.", image: "penguin.jpeg"},
+            {animal: "Raven", fact: "Ravens hold grudges against people who wrong them.", image: "raven.jpeg"},
+            {animal: "Pigeon", fact: "Pigeons can recognize all 26 letters of the alphabet.", image: "pigeon.jpeg"},
+            {animal: "Owl", fact: "Owls can rotate their heads 270 degrees.", image: "owl.jpeg"},
+            {animal: "Albatross", fact: "Albatrosses can sleep while flying.", image: "albatross.jpeg"},
+            {animal: "Parrot", fact: "Parrots can live up to 80 years.", image: "parrot.jpeg"},
+            {animal: "Crow", fact: "Crows use tools to solve problems.", image: "crow.jpeg"},
+            {animal: "Eagle", fact: "Eagles can spot prey from two miles away.", image: "eagle.jpeg"},
+            {animal: "Starfish", fact: "Starfish can regenerate lost limbs.", image: "starfish.jpeg"},
+            {animal: "Shrimp", fact: "A shrimp's heart is located in its head.", image: "shrimp.jpeg"},
+            {animal: "Octopus", fact: "Octopuses have three hearts and blue blood.", image: "octopus.jpeg"},
+            {animal: "Seahorse", fact: "Male seahorses get pregnant and give birth.", image: "seahorse.jpeg"},
+            {animal: "Jellyfish", fact: "Jellyfish are older than dinosaurs.", image: "jellyfish.jpeg"},
+            {animal: "Clownfish", fact: "Clownfish can change gender.", image: "clownfish.jpeg"},
+            {animal: "Mantis Shrimp", fact: "Mantis shrimp have the most complex eyes.", image: "mantis shrimp.jpeg"},
+            {animal: "Crab", fact: "Crabs prefer to walk sideways.", image: "crab.jpeg"},
+            {animal: "Moray Eel", fact: "Moray eels have a second set of jaws.", image: "moray eel.jpeg"},
+            {animal: "Sea Snail", fact: "Some sea snails can kill humans with venom.", image: "sea snail.jpeg"},
+            {animal: "Orca", fact: "Orcas are the only predators of great white sharks.", image: "orca.jpeg"},
+            {animal: "Lobster", fact: "Lobsters can regenerate lost limbs.", image: "lobster.jpeg"},
+            {animal: "Greenland Shark", fact: "Greenland sharks can live over 400 years.", image: "greenland shark.jpeg"},
+            {animal: "Frog", fact: "Frogs can throw up their stomachs.", image: "frog.jpeg"},
+            {animal: "Crocodile", fact: "Crocodiles can't stick out their tongues.", image: "crocodile.jpeg"},
+            {animal: "Chameleon", fact: "Chameleons move eyes independently.", image: "chameleon.jpeg"},
+            {animal: "Snake", fact: "Snakes smell with their tongues.", image: "snake.jpeg"},
+            {animal: "Komodo Dragon", fact: "Komodo dragons have venom that prevents clotting.", image: "komodo dragon.jpeg"},
+            {animal: "Tortoise", fact: "Tortoises can live over 150 years.", image: "tortoise.jpeg"},
+            {animal: "Poison Dart Frog", fact: "Its poison can kill 10 humans.", image: "poison dart frog.jpeg"},
+            {animal: "Lizard", fact: "Some lizards detach tails to escape.", image: "lizard.jpeg"},
+            {animal: "Salamander", fact: "Salamanders can regrow limbs and organs.", image: "salamander.jpeg"},
+            {animal: "Gecko", fact: "Geckos walk on walls with special toe pads.", image: "gecko.jpeg"},
+            {animal: "Tuatara", fact: "Tuatara has a third eye.", image: "tuatara.jpeg"},
+            {animal: "Alligator", fact: "Alligators growl underwater.", image: "alligator.jpeg"},
+            {animal: "Toad", fact: "Toads absorb water through skin.", image: "toad.jpeg"},
+            {animal: "Turtle", fact: "Some turtles breathe through their rear.", image: "turtle.jpeg"},
+            {animal: "Honeybee", fact: "Honeybees recognize human faces.", image: "honeybee.jpeg"},
+            {animal: "Ant", fact: "Ants have two stomachs.", image: "ant.jpeg"},
+            {animal: "Butterfly", fact: "Butterflies taste with their feet.", image: "butterfly.jpeg"},
+            {animal: "Firefly", fact: "Fireflies produce light chemically.", image: "firefly.jpeg"},
+            {animal: "Dragonfly", fact: "Dragonflies fly at 35 mph.", image: "dragonfly.jpeg"},
+            {animal: "Termite", fact: "Termites never sleep.", image: "termite.jpeg"},
+            {animal: "Ladybug", fact: "Ladybugs eat up to 5,000 aphids.", image: "ladybug.jpeg"},
+            {animal: "Praying Mantis", fact: "Only insect that can rotate its head.", image: "praying mantis.jpeg"},
+            {animal: "Spider", fact: "Some spiders fly using wind currents.", image: "spider.jpeg"},
+            {animal: "Cockroach", fact: "Cockroaches live weeks without heads.", image: "cockroach.jpeg"},
+            {animal: "Flea", fact: "Fleas jump 200 times their body length.", image: "flea.jpeg"},
+            {animal: "Bee", fact: "Bees solve basic math problems.", image: "bee.jpeg"},
+            {animal: "Mosquito", fact: "Mosquitoes have existed for 100 million years.", image: "mosquito.jpeg"},
+            {animal: "Cat", fact: "Cats meow only to communicate with humans.", image: "cat.jpeg"},
+            {animal: "Dog", fact: "Dogs have a sense of time.", image: "dog.jpeg"},
+            {animal: "Platypus", fact: "Platypus has no stomach.", image: "platypus.jpeg"},
+            {animal: "Squirrel", fact: "Squirrels forget where they bury acorns.", image: "squirrel.jpeg"},
+            {animal: "Tiger", fact: "Tigers have striped skin.", image: "tiger.jpeg"},
+            {animal: "Camel", fact: "Camels have three eyelids.", image: "camel.jpeg"},
+            {animal: "Panda", fact: "Pandas eat bamboo for 16 hours a day.", image: "panda.jpeg"},
+            {animal: "Hedgehog", fact: "Hedgehogs roll into a ball for defense.", image: "hedgehog.jpeg"},
+            {animal: "Gorilla", fact: "Gorillas have human-like fingerprints.", image: "gorilla.jpeg"},
+            {animal: "Hippo", fact: "Hippos secrete red sunscreen.", image: "hippo.jpeg"}
         ];
 
         const jokes = [
             {joke: "Why don't oysters share their pearls? Because they're a little shellfish.", keywords: ["oyster", "shell", "fish", "sea"]},
+            {joke: "I otter tell you, sea creatures have the best shell-ebrations.", keywords: ["otter", "sea"]},
+            {joke: "Deer me, I didn't see that one coming!", keywords: ["deer"]},
             {joke: "What do you call an alligator in a vest? An investigator.", keywords: ["alligator", "crocodile"]},
+            {joke: "I whale always love you.", keywords: ["whale"]},
             {joke: "Why are frogs so happy? Because they eat whatever bugs them!", keywords: ["frog", "bug"]},
             {joke: "You've cat to be kitten me right meow!", keywords: ["cat", "kitten"]},
+            {joke: "Alpaca my bags and let's go on an adventure.", keywords: ["alpaca", "llama"]},
+            {joke: "Bear with me, I have more puns to share!", keywords: ["bear"]},
             {joke: "Why do fish always know how much they weigh? Because they have their own scales.", keywords: ["fish", "scale"]},
             {joke: "Stop lion around, we've got work to do!", keywords: ["lion"]},
+            {joke: "Ewe won't believe these animal puns!", keywords: ["sheep", "ewe"]},
+            {joke: "Paws what you're doing and listen up!", keywords: ["paw", "dog", "cat"]},
+            {joke: "I herd it through the bovine.", keywords: ["cow", "bovine", "cattle"]},
+            {joke: "I'm otterly excited to share these!", keywords: ["otter"]},
+            {joke: "Just be-claws, these jokes are funny!", keywords: ["claw", "crab", "lobster"]},
+            {joke: "This is hawkward, but you're going to laugh.", keywords: ["hawk", "bird"]},
+            {joke: "I'm a-moose-d by your reaction!", keywords: ["moose"]},
+            {joke: "Toucan play at this pun game!", keywords: ["toucan", "bird"]},
             {joke: "Owl always love animal puns!", keywords: ["owl"]},
+            {joke: "We goat to get moving!", keywords: ["goat"]},
+            {joke: "I'll porpoise-fully tell more jokes.", keywords: ["porpoise", "dolphin"]},
+            {joke: "I'm panda-ing to the audience.", keywords: ["panda"]},
+            {joke: "Let's not duck the subject.", keywords: ["duck"]},
+            {joke: "Gnu kidding around, let's get serious.", keywords: ["gnu", "wildebeest"]},
+            {joke: "It's purr-fect timing.", keywords: ["cat", "purr"]},
+            {joke: "Do you want to koalaborate?", keywords: ["koala"]},
+            {joke: "Stay pawsitive!", keywords: ["paw"]},
+            {joke: "Don't make it squid-ward.", keywords: ["squid"]},
+            {joke: "I'm beary excited!", keywords: ["bear"]},
+            {joke: "This is going swimmingly!", keywords: ["swim", "fish"]},
+            {joke: "Are you feline good?", keywords: ["cat", "feline"]},
+            {joke: "Why so sheepish?", keywords: ["sheep"]},
+            {joke: "Quit horsing around!", keywords: ["horse"]},
+            {joke: "Let's wing it.", keywords: ["bird", "wing"]},
+            {joke: "Shell we continue?", keywords: ["shell", "turtle", "crab"]},
+            {joke: "I'm batty about this!", keywords: ["bat"]},
+            {joke: "This place is the purr-fect habitat.", keywords: ["cat", "purr"]},
+            {joke: "I'll bee seeing you around.", keywords: ["bee"]},
+            {joke: "Don't be koi about it!", keywords: ["koi", "fish"]},
+            {joke: "This feels like furever.", keywords: ["fur"]},
+            {joke: "I'm hopping to it.", keywords: ["hop", "rabbit", "frog", "kangaroo"]},
+            {joke: "Let's get the seal of approval.", keywords: ["seal"]},
+            {joke: "Just monkeying around!", keywords: ["monkey"]},
+            {joke: "We're in hawk pursuit.", keywords: ["hawk"]},
+            {joke: "Let's keep this fur-tunate streak.", keywords: ["fur"]},
+            {joke: "Pawsitively entertaining!", keywords: ["paw"]},
+            {joke: "Don't let this go to the dogs.", keywords: ["dog"]},
+            {joke: "Be-leaf in yourself!", keywords: ["leaf"]},
+            {joke: "I'm sure you'll hoof it with laughter!", keywords: ["hoof", "horse", "cow"]},
+            {joke: "I'm not lion, that was funny!", keywords: ["lion"]},
+            {joke: "You're giraffing me crazy!", keywords: ["giraffe"]},
+            {joke: "I'm hare for the laughs!", keywords: ["hare", "rabbit"]},
+            {joke: "Let's shell-ebrate!", keywords: ["shell"]},
             {joke: "I'm not kitten around!", keywords: ["kitten", "cat"]},
-            {joke: "You're pawsome!", keywords: ["paw", "dog", "cat"]},
-            {joke: "Let's have a whale of a time!", keywords: ["whale"]}
+            {joke: "You're pawsome!", keywords: ["paw"]},
+            {joke: "I'm totally claw-some!", keywords: ["claw"]},
+            {joke: "Let's have a whale of a time!", keywords: ["whale"]},
+            {joke: "You're turtle-y awesome!", keywords: ["turtle"]},
+            {joke: "I'm not squidding!", keywords: ["squid"]},
+            {joke: "You're the mane event!", keywords: ["mane", "lion", "horse"]},
+            {joke: "I'm not horsing around!", keywords: ["horse"]},
+            {joke: "You're un-frog-ettable!", keywords: ["frog"]},
+            {joke: "I'm not lion, you're great!", keywords: ["lion"]},
+            {joke: "You're bear-y funny!", keywords: ["bear"]},
+            {joke: "I'm not monkeying around!", keywords: ["monkey"]},
+            {joke: "You're the cat's meow!", keywords: ["cat"]},
+            {joke: "I'm not ducking the truth!", keywords: ["duck"]},
+            {joke: "You're the bee's knees!", keywords: ["bee"]},
+            {joke: "I'm not sheepish about it!", keywords: ["sheep"]},
+            {joke: "You're the top dog!", keywords: ["dog"]},
+            {joke: "I'm not crabby, I'm happy!", keywords: ["crab"]},
+            {joke: "You're the fish-ionista!", keywords: ["fish"]}
         ];
 
         let responseCount = 0;
         const sillyResponses = [
-            "🎪 *does a silly dance* 💃",
-            "🤪 BOOP! Random silliness alert! 🎉",
-            "🌟 Did someone order extra goofiness? 😜",
-            "🎉 *spins around dramatically* WHEEEEE! 🌪️"
+            "does a silly dance",
+            "BOOP! Random silliness alert!",
+            "pretends to be a chicken BAWK BAWK!",
+            "Did someone order extra goofiness?",
+            "juggling invisible bananas",
+            "HONK HONK! Silly train coming through!",
+            "spins around dramatically WHEEEEE!",
+            "I'm feeling extra goofy today!",
+            "rides an imaginary unicorn NEIGH!",
+            "Who ordered the clown show? Oh wait, that's me!"
         ];
 
         function addMessage(content, isBot = true) {
@@ -279,7 +403,7 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
             
             const avatarDiv = document.createElement('div');
             avatarDiv.className = 'avatar';
-            avatarDiv.textContent = isBot ? '🤖' : '👤';
+            avatarDiv.innerHTML = isBot ? '&#129302;' : '&#128100;';
             
             const contentDiv = document.createElement('div');
             contentDiv.className = 'message-content';
@@ -297,9 +421,9 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
             chatContainer.scrollTop = chatContainer.scrollHeight;
         }
 
-        function changeBackground(imageUrl) {
+        function changeBackground(imageName) {
             const bg = document.getElementById('background');
-            bg.style.backgroundImage = `url('${imageUrl}')`;
+            bg.style.backgroundImage = `url('${imageName}')`;
             bg.style.opacity = '0.3';
         }
 
@@ -333,13 +457,11 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
             
             if (animal) {
                 changeBackground(animal.image);
-                let response = `🎯 ${animal.animal} fact: ${animal.fact}`;
-                
+                let response = `${animal.animal} fact: ${animal.fact}`;
                 if (wantsJoke) {
                     const joke = findJoke(userInput);
-                    response += `\n\n😄 Bonus joke: ${joke}`;
+                    response += `\n\nBonus joke: ${joke}`;
                 }
-                
                 if (responseCount % 3 === 0) {
                     response += `\n\n${sillyResponses[Math.floor(Math.random() * sillyResponses.length)]}`;
                 }
@@ -348,7 +470,7 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
             
             if (wantsJoke) {
                 const joke = findJoke(userInput);
-                let response = `😄 ${joke}`;
+                let response = joke;
                 if (responseCount % 3 === 0) {
                     response += `\n\n${sillyResponses[Math.floor(Math.random() * sillyResponses.length)]}`;
                 }
@@ -356,22 +478,30 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
             }
             
             if (input.includes('hello') || input.includes('hi') || input.includes('hey')) {
-                return "Hey there! 👋 Ask me about any animal, or say 'tell me a joke'!";
+                return "Hey there! Ask me about any animal, or say 'tell me a joke'! I've got 75 facts and 73 jokes ready!";
+            }
+            
+            if (input.includes('help') || input.includes('what can you do')) {
+                return "Here's what I can do:\n- Tell you about 75 animals\n- Share 73 hilarious jokes\n- Get silly every 3rd response!\n\nTry: 'Tell me about penguins' or 'Tell me a joke'";
             }
             
             if (input.includes('random') || input.includes('surprise')) {
                 const randomFact = funFacts[Math.floor(Math.random() * funFacts.length)];
                 changeBackground(randomFact.image);
-                let response = `🎲 Random fact: ${randomFact.animal} - ${randomFact.fact}`;
+                let response = `Random fact: ${randomFact.animal} - ${randomFact.fact}`;
                 if (responseCount % 3 === 0) {
                     response += `\n\n${sillyResponses[Math.floor(Math.random() * sillyResponses.length)]}`;
                 }
                 return response;
             }
             
-            const suggestions = ['elephant', 'cat', 'dog', 'penguin', 'owl'];
+            if (input.includes('thank')) {
+                return "You're welcome! Want to learn about another animal?";
+            }
+            
+            const suggestions = ['elephant', 'sloth', 'dolphin', 'cat', 'dog', 'penguin', 'owl'];
             const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
-            return `Hmm, I didn't catch that! 🤔 Try asking about "${randomSuggestion}" or say "tell me a joke"!`;
+            return `Hmm, I didn't catch that! Try asking about specific animals like "${randomSuggestion}" or say "tell me a joke"!`;
         }
 
         document.getElementById('sendBtn').addEventListener('click', sendMessage);
@@ -383,10 +513,8 @@ I know 75 hilarious facts and 73 punny jokes! 🎉</div>
             const input = document.getElementById('userInput');
             const message = input.value.trim();
             if (!message) return;
-            
             addMessage(message, false);
             input.value = '';
-            
             setTimeout(() => {
                 const response = generateResponse(message);
                 addMessage(response, true);
